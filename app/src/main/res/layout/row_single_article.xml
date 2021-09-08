@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootSingleArticleLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    app:layout_constraintWidth_default="spread">
+
+    <ImageView
+        android:id="@+id/iv_item_icon"
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginStart="@dimen/_8dp"
+        android:background="@drawable/circular_view"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_original"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_5dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_item_explain"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintLeft_toRightOf="@+id/iv_item_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Supporters of the Democratic Candidate Jon Ossoff after his " />
+
+    <TextView
+        android:id="@+id/tv_item_explain"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6dp"
+        android:layout_marginEnd="@dimen/_5dp"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_icon"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_translate"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_original"
+        tools:text="By DAVID LEONHARDT and STUART A." />
+
+    <TextView
+        android:id="@+id/tv_item_translate"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_item_date"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_icon"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_explain"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_date"
+        tools:ignore="MissingConstraints"
+        tools:text="THOMPSON" />
+
+    <TextView
+        android:id="@+id/tv_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_24dp"
+        android:layout_marginTop="@dimen/_6dp"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:drawablePadding="@dimen/_5dp"
+        android:gravity="end"
+        app:drawableStartCompat="@drawable/ic_baseline_calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_explain"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_explain"
+        tools:text="2018/01/19" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_navigate_next" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
