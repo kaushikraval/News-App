@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NY Times</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="published_on">Published On: </string>
+    <string name="api_error_messge">Something went wrong! Please try again later</string>
+</resources>
